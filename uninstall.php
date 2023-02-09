@@ -12,7 +12,7 @@ if(! defined ('WP_UNINSTALL_PLUGIN')){
 
 //delete from db
 //method 1
-$books = get_posts(array('post_type' => 'book', 'posts_per_page' => -1));
+$books = get_posts(array('post_type' => 'post', 'numberposts' => -1));
 //loop
 foreach($books as $book){
     wp_delete_posts($book->ID, true);
