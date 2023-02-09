@@ -131,4 +131,4 @@ register_activation_hook(__FILE__, array($customPluginInstance, 'activate'));
 register_deactivation_hook(__FILE__, array($customPluginInstance, 'deactivate'));
 
 //Uninstall
-register_uninstall_hook(__FILE__,array($customPluginInstance, 'uninstall'))
+register_uninstall_hook(__FILE__,array($customPluginInstance, 'uninstall'));
